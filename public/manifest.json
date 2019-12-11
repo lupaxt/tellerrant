@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "together",
+	"name": "tellerrant",
 	"author": "Markus",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"description": "start here",
 	"icons": {
 		"16": "images/icon-16.png",

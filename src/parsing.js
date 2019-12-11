@@ -4,12 +4,26 @@ import { groupPatternsByBaseDirectory } from "fast-glob/out/managers/tasks"
 //https://chromium.googlesource.com/chromium/src/+/master/chrome/common/extensions/docs/examples/api/history/showHistory/typedUrls.js
 
 
+//TODO
+//parse article text ; headlines
+//NLP apis
+//compare entities
+//
+//why x is awesome
+//why x is  
+
+
+
+
+
 //exclude from history
 const excludeSites = [
     "facebook.com",
     "google.com",
     "..."
 ]
+
+
 export const getHistory = () => {
     chrome.history.search({
         'text': '',              // Return every history item....
