@@ -1,4 +1,7 @@
 /*global chrome*/
+const apiKey = '053aab839af5baf1545343cd81cf0c48';
+const appId = '3fba88c5';
+const aylienApi = 'https://api.aylien.com/api/v1';
 
 'use strict';
 
@@ -31,7 +34,18 @@ window.onload = function () {
     //     return true
     // });
 
+    fetch(`${aylienApi}/concepts/?url=${window.location.href}`, {
+        headers: {
+            'X-AYLIEN-TextAPI-Application-Key': apiKey,
+            'X-AYLIEN-TextAPI-Application-ID': appId,
+        }
+    })
+        .then(
+            response => {
+                console.log('response', response);
+            }
+        ).catch(console.log)
     
-     console.log("wasaasaw")
+     console.log("wasaasaw", document);
 
 }
